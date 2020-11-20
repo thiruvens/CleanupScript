@@ -48,6 +48,7 @@ then
 		echo "$(date '+%D %T') - clean up day activity is completed with /usr/local/wamedia/shared"
 		echo "$(date '+%D %T') - clean up older days data in /usr/local/wamedia/outgoing/sent"
 		cd /usr/local/wamedia/outgoing/sent
+		cleanup_day_logic
 		echo "$(date '+%D %T') - clean up day activity is completed with /usr/local/wamedia/outgoing/sent"
 		else
 		echo "$(date '+%D %T') - disk usage is under control value is $(check_disk_usage) day"
